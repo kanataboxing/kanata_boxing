@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeatureShowcase from '../components/react/FeatureShowcase';
+import BlogCard from '../components/react/BlogCard';
+
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true })
+);
+const pageTitle = "My Astro Learning Blog";
+
+console.log("BLOG");
+console.log(allPosts);
+---
+
+<BaseLayout>
+
+  <section class="py-24 bg-light-tan">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-light-tan-dark text-brown">
+        Articles
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-brown">
+        <!-- Comprehensive <span class="gradient-text">Solutions</span> -->
+        Master Ken's Blog
+      </h2>
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-brown-light">
+        -- Put blurb here about the types of services Ken wants to offer --
+      </p>
+    </div>
+
+    
+
+    <BlogCard items={allPosts} client:load/> 
+  
+  </div>
+</section>
+
+</BaseLayout>

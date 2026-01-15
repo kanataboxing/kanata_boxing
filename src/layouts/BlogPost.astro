@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts//BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
+  <p><em>{frontmatter.description}</em></p>
+  <p>Written by: {frontmatter.author}</p>
+  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+
+  <slot />
+</BaseLayout>
+
+<!-- <div class={`${index % 2 === 1 ? 'lg:col-start-2' : ''} animate-fadeInUp`}>
+            <div class="flex items-center justify-center w-16 h-16 rounded-xl text-white mb-6 shadow-lg" style={`background: linear-gradient(135deg, ${index % 2 === 0 ? '#9f3434 0%, #7a2828 100%' : '#8d7051 0%, #6f5840 100%'});`}>
+              <div class="w-8 h-8" set:html={capability.icon.replace('w-12 h-12', 'w-8 h-8').replace('currentColor', 'white')} />
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {capability.title}
+            </h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              {capability.description}
+            </p>            <ul class="space-y-3">
+              {capability.features.map((feature) => (
+                <li class="flex items-center space-x-3">
+                  <svg class="w-5 h-5 shrink-0 text-tan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
