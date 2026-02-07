@@ -132,3 +132,34 @@ body {
 }
 
 /* Remove manually defined utility classes - Tailwind v4 auto-generates these from @theme */
+
+ol {
+  list-style-type: value;
+  margin-left: 1.5em; /* Add some margin for indentation */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em; /* Add some margin for indentation */
+}
+
+/* a:link {
+  color: red;
+  text-decoration: none;
+} */
+
+/* Visited link */
+/* a:visited {
+  color: red;
+} */
+
+/* Mouse over link */
+p a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Selected link */
+p a:active {
+  color: red;
+}

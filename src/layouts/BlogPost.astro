@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 import { SITE } from '../config/site';
 console.log("AAAAAAAHHHHHHHHHHHHH");
 console.log(Astro.site);
-const image_url = "/master_ken/" + frontmatter.image;
+const image_url = "/master_ken/" + frontmatter.hero;
 
 ---
 <BaseLayout>
@@ -21,21 +21,20 @@ const image_url = "/master_ken/" + frontmatter.image;
         height={1380}
       /> -->
       <img class="w-full h-full object-contain" src={image_url}>
-      <div class="absolute inset-0 bg-linear-to-r from-stone-900/70 via-stone-900/50 to-stone-900/60"></div>
+      <!-- <div class="absolute inset-0 bg-linear-to-r from-stone-900/70 via-stone-900/50 to-stone-900/60"></div> -->
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
     </div>
 
     <div class="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
         
-        <h2 class="text-4xl md:text-5xl font-bold text-slate-200 mb-4">
+        <!-- <h2 class="text-4xl md:text-5xl font-bold text-slate-200 mb-4">
         {frontmatter.title}
-        <!-- Frequently Asked <span class="gradient-text">Questions</span> -->
         </h2>
         
         <p class="text-xl md:text-2xl text-slate-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp" style="animation-delay: 0.1s">
           {frontmatter.description}
-        </p>
+        </p> -->
 
       </div>
     </div>

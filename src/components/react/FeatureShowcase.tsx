@@ -1,37 +1,41 @@
 import { motion } from 'motion/react';
 // import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
-import taekwondoImg from '@assets/taekwondo-1.jpg';
+import taekwondoImg from '@assets/tkd_bubble.png';
 import hapkidoImg from '@assets/hapkido-1.jpg';
-import boxingImg from '@assets/boxing-1.jpg';
+import boxingImg from '@assets/boxing_splash.png';
 import fitnessImg from '@assets/fitness-1.jpg';
 import grapplingImg from '@assets/grappling-1.jpg';
-import childprogramImg from '@assets/kid_program-2.jpg';
+import childprogramImg from '@assets/children_program_bubble.png';
 
 const features = [
   {
     // icon: Warehouse,
-    title: 'Taekwondo',
-    description: 'Song Moo Kwan and Kukkiwon Taekwondo',
+    title: '',
+    description: '',
     image: taekwondoImg,
+    link: '/master_ken/taekwondo'
   },
   {
     // icon: Truck,
     title: 'Hapkido',
     description: 'Korean Hapkido Federation Kyung Mu Kwan system',
     image: hapkidoImg,
+    link: ''
   },
   {
     // icon: Package,
-    title: 'Boxing',
-    description: 'NCCP Level 1 Boxing',
+    title: '',
+    description: '',
     image: boxingImg,
+    link: '/master_ken/martial_arts/boxing'
   },
   {
     // icon: BarChart3,
     title: 'Adult Programs',
     description: '-- blurb for Adult programs --',
     image: fitnessImg,
+    link: ''
   },
   // {
   //   // icon: Shield,
@@ -41,9 +45,10 @@ const features = [
   // },
   {
     // icon: Headphones,
-    title: 'Child Programs',
-    description: 'Structured Learning and Growth',
+    title: '',
+    description: '',
     image: childprogramImg,
+    link: '/master_ken/child_programs'
   },
 ];
 
@@ -59,6 +64,7 @@ export default function FeatureShowcase() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
           className="group cursor-pointer"
         >
+          <a href={feature.link}>
           <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
             {/* Image */}
             <div className="relative h-64 overflow-hidden">              <motion.img
@@ -89,6 +95,7 @@ export default function FeatureShowcase() {
               <p className="text-sm text-gray-200 opacity-90">{feature.description}</p>
             </div>
           </div>
+          </a>
         </motion.div>
       ))}
     </div>

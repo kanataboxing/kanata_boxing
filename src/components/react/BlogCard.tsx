@@ -26,7 +26,7 @@ export default function FeatureShowcase(items) {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
               />
-              <div className="absolute inset-0 opacity-60" style={{ background: 'linear-gradient(to top, rgb(15, 23, 42), rgba(15, 23, 42, 0.5), transparent)' }} />
+              {/* <div className="absolute inset-0 opacity-60" style={{ background: 'linear-gradient(to top, rgb(15, 23, 42), rgba(15, 23, 42, 0.5), transparent)' }} /> */}
               {/* Icon overlay */}
               {/* <motion.div
                 initial={{ scale: 0 }}
@@ -41,10 +41,10 @@ export default function FeatureShowcase(items) {
 
             {/* Content */}
             
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            {/* <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               <h3 className="text-xl font-bold mb-2">{blog_content.frontmatter.title}</h3>
               <p className="text-sm text-gray-200 opacity-90">{blog_content.frontmatter.description}</p>
-            </div>
+            </div> */}
           </div>
         </motion.div>
         </a>
