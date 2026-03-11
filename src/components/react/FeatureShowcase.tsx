@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 // import { Warehouse, Truck, Package, BarChart3, Shield, Headphones } from 'lucide-react';
 
 import taekwondoImg from '@assets/tkd_bubble.png';
-import hapkidoImg from '@assets/hapkido-1.jpg';
+import hapkidoImg from '@assets/hapkido-1.png';
 import boxingImg from '@assets/boxing_splash.png';
 import fitnessImg from '@assets/fitness-1.jpg';
 import grapplingImg from '@assets/grappling-1.jpg';
@@ -18,8 +18,8 @@ const features = [
   },
   {
     // icon: Truck,
-    title: 'Hapkido',
-    description: 'Korean Hapkido Federation Kyung Mu Kwan system',
+    title: '',
+    description: '',
     image: hapkidoImg,
     link: ''
   },
