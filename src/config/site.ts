@@ -16,6 +16,7 @@ export const NAVIGATION = [
 
 export const MARTIAL_ARTS = [
     { name: 'Taekwondo', href: '/master_ken/martial_arts/taekwondo' },
+    { name: 'Hapkido', href: '/master_ken/martial_arts/hapkido' },
     { name: 'Boxing', href: '/master_ken/martial_arts/boxing' }
 ] as const;
 
