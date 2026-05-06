@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import taekwondoImg from '@assets/tkd_bubble.png';
 import hapkidoImg from '@assets/hapkido-1.png';
 import boxingImg from '@assets/boxing_splash.png';
-import fitnessImg from '@assets/fitness-1.jpg';
+import fitnessImg from '@assets/adult_program_bubble.png';
 import grapplingImg from '@assets/grappling-1.jpg';
 import childprogramImg from '@assets/children_program_bubble.png';
 
