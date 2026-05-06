@@ -35,7 +35,7 @@ const features = [
     title: 'Adult Programs',
     description: '-- blurb for Adult programs --',
     image: fitnessImg,
-    link: ''
+    link: '/master_ken/adult_programs'
   },
   // {
   //   // icon: Shield,
