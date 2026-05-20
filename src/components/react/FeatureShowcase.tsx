@@ -32,8 +32,8 @@ const features = [
   },
   {
     // icon: BarChart3,
-    title: 'Adult Programs',
-    description: '-- blurb for Adult programs --',
+    title: '',
+    description: '',
     image: fitnessImg,
     link: '/master_ken/adult_programs'
   },
