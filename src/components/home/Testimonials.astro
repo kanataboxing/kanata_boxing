@@ -1,53 +1,178 @@
 ---
 import TestimonialCard from '../ui/TestimonialCard.astro';
+import { Image, getImage } from 'astro:assets';
 
-import testimonial1Img from '@assets/photo-1494790108377-be9c29b29330.jpg';
-import testimonial2Img from '@assets/photo-1507003211169-0a1dd7228f2d.jpg';
-import testimonial3Img from '@assets/photo-1438761681033-6461ffad8d80.jpg';
+import glove_img from '@assets/glove_bullet.png';
+import bg_img from '@assets/main_boxing_bg_opacity.png';
+
+const optimizedBackground = await getImage({ src: bg_img });
 
 const testimonials= [
   {
-    quote: "We first came to know Master Ken as a hockey coach, where his dedication extended well beyond the season as he selflessly organized off-season training for kids eager to continue developing their skills. Since then, Master Ken has been an outstanding Taekwondo instructor for our children. We’ve seen continual progress in their skills and a real increase in their confidence. He uses encouragement and discipline effectively to keep the kids motivated and focused. Beyond his extensive experience in Taekwondo and other martial arts, what truly sets Master Ken apart is his passion for helping kids reach their full potential.",
-    name: "Steve and Krystal",
-    role: "Youth Hockey Team",
-    image: testimonial1Img,
+    quote: "\"My experience training with Ken was enlightening. Having trained casually before, I had accumulated a collection of bad habits that prevented me from striking to my full potential. Ken was very knowledgeable and identified the problem almost immediately. With his tutelage, I improved my form and power within my first visit!\"",
+    name: "Christopher W.",
+    role: "",
+    image: glove_img,
     ringColor: "ring-light-tan-dark"
   },
-  {
-    quote: "Master Ken's class is a great place for students of all ages to learn Taekwondo fundamentals, as well as other techniques from other Martial Arts disciplines. My kids, as well as myself (mom), learned self-confidence, focus and achieving goals from white belt, all the way to black belt. Ken has offered my family an open environment for my family to grow and succeed. Ken also teaches that Martial Arts isn't just about learning how to fight, it is a mindset of self-control and discipline and learning to trust in yourself which can be used in many areas of life.",
-    name: "Reagan",
-    role: "1st Dan Taekwondo and Mom",
-    image: testimonial2Img,
-    ringColor: "ring-tan"
-  },
-  {
-    quote: "Training with Master Ken for the past 10 years taught me more than just self defence. I learned discipline, resilience and respect while having a great time doing it! Master ken isn't only a great teacher, he's become a real inspiration and friend. I couldn't recommend him enough.",
-    name: "Élias",
-    role: "2nd Dan Taekwondo",
-    image: testimonial3Img,
-    ringColor: "ring-light-tan-dark"
-  }
 ];
 ---
 
-<section class="py-24 bg-white">
+<section class="py-24 bg-neutral-400">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
+        <div
+          class="bg-[image:var(--bg-image)] bg-cover bg-center w-full"
+          style={`--bg-image: url(${optimizedBackground.src});`}
+        >
+      
+
+
       <div class="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-light-tan-dark text-brown">
         Client Success Stories
       </div>
+
       <h2 class="text-4xl md:text-5xl font-bold mb-6 text-brown">
         Results Backed by <span class="gradient-text">Experience</span>
       </h2>
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-brown-light">
-        See how we've helped every day people become their strongest, and change what they thought was possible.
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        With 20 years boxing and over 40 years teaching martial arts, Kanata Boxing brings the sweet
+        science to Kanata and Stittsville where you will definitely learn to move like a butterfly and sting
+        like a bee in our fun dynamic workouts while you:
       </p>
+      <br>
+
+      <div class="mx-auto max-w-4xl p-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="p-4">
+            <ul>
+              <li>
+                <Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-6 w-auto"
+                  width={32}
+                  height={32}
+                  decoding="async"
+                  fetchpriority="high"
+                /> Get Fitter
+              </li>
+              <li>
+                <Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-6 w-auto"
+                  width={32}
+                  height={32}
+                  decoding="async"
+                  fetchpriority="high"
+                /> Gain Confidence
+              </li>
+              <li><Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-6 w-auto"
+                  width={32}
+                  height={32}
+                  decoding="async"
+                  fetchpriority="high"
+                /> Reduce Stress
+              </li>
+            </ul>
+          </div>
+          <div class="p-4">
+            <ul>
+              <li><Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-6 w-auto"
+                  width={32}
+                  height={32}
+                  decoding="async"
+                  fetchpriority="high"
+                /> Gain More Energy</li>
+              <li><Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-6 w-auto"
+                  width={32}
+                  height={32}
+                  decoding="async"
+                  fetchpriority="high"
+                /> Build Self-Esteem</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="mx-auto max-w-4xl p-4">
+        <div class="grid grid-cols-1 gap-8">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard testimonial={testimonial} variant="home" />
+          ))}
+        </div>
+      </div>
+      <br>
+
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        The great thing about boxing is that anyone can do it regardless of your
+        physicality and where, like all martial arts/combat sports it takes years to
+        master the subtle nuances, it is the one combat sport where, as a beginner,
+        you will see the fastest improvements and has easiest introduction where right
+        from your first class you will feel like “Rocky” where our main goal is to help
+        you feel better, healthier and more energetic.
+      </p>
+      <br>
+
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        If you're looking to improve your fitness, confidence and destress in a fun and
+        supportive environment then our beginner-friendly boxing programs in Kanata
+        and Stittsville's only stand-alone boxing program is the place for you.
+      </p>
+      <br>
+
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        Our Children's Boxing program is all about having fun, getting them use to
+        exercising while developing hand-eye coordination, balance, concentration,
+        agility, confidence and self-esteem leading to a more self-assured child that
+        will help with their attention to their schoolwork and be calmer at home!
+      </p>
+      <br>
+      
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        Our Youth Boxing Program is all about giving them the “action” that this age
+        groups need. Getting them busy with a fun cool activity that will make them
+        look forward to the next session. Getting them to burn off excess energy and
+        frustration while getting stronger, fitter and more agile in our dynamic
+        cutting-edge workouts!!
+      </p>
+      <br>
+      
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        Our Adult Boxing Program helps you regain energy, stay active for years to
+        come, and enrich your lifestyle. Don't worry if you're not in shape—that's
+        exactly what our dynamic boxing program is for. We'll help you get moving
+        again and feel fitter in no time. As Dr. Kenneth Cooper said, “You don't stop
+        working out because you get old; you get old when you stop working out.”
+        Think of it this way: if squatting, running, or jumping feels difficult at 40, what
+        will it feel like at 60? If you already feel that way, we're here to help. With years
+        of experience helping people reach their fitness goals, we're committed to
+        getting you back in action, feeling fitter, happier, and we become invested in
+        your success.
+      </p>
+      <br>
+      
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
+        There is no set schedule to give as we schedule your sessions around your
+        availability with small group sessions capped at 4 or even one on one sessions
+        where in both instances, your progress is personally monitored!
+      </p>
+      
+
+    </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {testimonials.map((testimonial) => (
-        <TestimonialCard testimonial={testimonial} variant="home" />
-      ))}
-    </div>
+    
   </div>
 </section>

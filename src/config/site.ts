@@ -15,9 +15,9 @@ export const NAVIGATION = [
 ] as const;
 
 export const MARTIAL_ARTS = [
-    { name: 'Taekwondo', href: '/master_ken/martial_arts/taekwondo' },
-    { name: 'Hapkido', href: '/master_ken/martial_arts/hapkido' },
-    { name: 'Boxing', href: '/master_ken/martial_arts/boxing' }
+    { name: 'More Information About Boxing', href: '/master_ken/martial_arts/taekwondo' },
+    { name: 'Benefits of boxing for children', href: '/master_ken/martial_arts/hapkido' },
+    { name: 'Contact Us', href: '/master_ken/martial_arts/boxing' }
 ] as const;
 
 export const SOCIAL_LINKS = {
