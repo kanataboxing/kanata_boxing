@@ -26,18 +26,20 @@ const testimonials= [
           style={`--bg-image: url(${optimizedBackground.src});`}
         >
       
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        With 20 years boxing and over 40 years teaching martial arts, Kanata Boxing brings the sweet
-        science to Kanata and Stittsville where you will definitely learn to move like a butterfly and sting
-        like a bee in our fun dynamic workouts while you:
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        With 20 years of boxing experience and over 40 years teaching martial arts, Kanata Boxing
+        offers beginner-friendly boxing classes for children, youth, and adults in Kanata and Stittsville.
+        Learn to move like a butterfly and sting like a bee while improving your fitness, confidence, and
+        overall well-being in a fun and supportive environment while you:
       </p>
       <br>
 
       <div class="mx-auto max-w-4xl p-4">
         <div class="grid grid-cols-2 gap-4">
-          <div class="p-4">
+          <div class="p-4 text-justify">
             <ul>
               <li>
+                <p class="text-3xl font-bold">
                 <Image 
                   src={glove_img}
                   alt="Boxing Glove"
@@ -46,9 +48,10 @@ const testimonials= [
                   height={128}
                   decoding="async"
                   fetchpriority="high"
-                /> Get Fitter
+                /> Get Fitter</p>
               </li>
               <li>
+                <p class="text-3xl font-bold">
                 <Image 
                   src={glove_img}
                   alt="Boxing Glove"
@@ -57,9 +60,10 @@ const testimonials= [
                   height={128}
                   decoding="async"
                   fetchpriority="high"
-                /> Gain Confidence
+                /> Gain Confidence</p>
               </li>
-              <li><Image 
+              <li>
+                <p class="text-3xl font-bold"><Image 
                   src={glove_img}
                   alt="Boxing Glove"
                   class="inline h-12 w-auto"
@@ -67,13 +71,13 @@ const testimonials= [
                   height={128}
                   decoding="async"
                   fetchpriority="high"
-                /> Reduce Stress
+                /> Reduce Stress</p>
               </li>
             </ul>
           </div>
-          <div class="p-4">
+          <div class="p-4 text-justify">
             <ul>
-              <li><Image 
+              <li><p class="text-3xl font-bold"><Image 
                   src={glove_img}
                   alt="Boxing Glove"
                   class="inline h-12 w-auto"
@@ -81,8 +85,9 @@ const testimonials= [
                   height={128}
                   decoding="async"
                   fetchpriority="high"
-                /> Gain More Energy</li>
-              <li><Image 
+                /> Gain More Energy</p>
+              </li>
+              <li><p class="text-3xl font-bold"><Image 
                   src={glove_img}
                   alt="Boxing Glove"
                   class="inline h-12 w-auto"
@@ -90,19 +95,23 @@ const testimonials= [
                   height={128}
                   decoding="async"
                   fetchpriority="high"
-                /> Build Self-Esteem</li>
+                /> Build Self-Esteem</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       
-      <div class="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-light-tan-dark text-brown">
-        Client Success Stories
-      </div>
+      
 
       <h2 class="text-4xl md:text-5xl font-bold mb-6 text-brown">
         Results Backed by <span class="gradient-text">Experience</span>
       </h2>
+
+      <div class="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-light-tan-dark text-brown">
+        Client Success Story
+      </div>
+
       <div class="mx-auto max-w-4xl p-4">
         <div class="grid grid-cols-1 gap-8">
           {testimonials.map((testimonial) => (
@@ -112,58 +121,54 @@ const testimonials= [
       </div>
       <br>
 
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        The great thing about boxing is that anyone can do it regardless of your
-        physicality and where, like all martial arts/combat sports it takes years to
-        master the subtle nuances, it is the one combat sport where, as a beginner,
-        you will see the fastest improvements and has easiest introduction where right
-        from your first class you will feel like “Rocky” where our main goal is to help
-        you feel better, healthier and more energetic.
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        The great thing about boxing is that anyone can do it, regardless of age, fitness level, or
+        experience. While mastering the sweet science takes years, boxing is one of the easiest combat
+        sports to begin and one where beginners often see improvements within the first couple of
+        classes.
       </p>
       <br>
 
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        If you're looking to improve your fitness, confidence and destress in a fun and
-        supportive environment then our beginner-friendly boxing programs in Kanata
-        and Stittsville's only stand-alone boxing program is the place for you.
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        If you're looking to improve your fitness, build confidence, and de-stress in a fun and supportive
+        environment, our beginner-friendly boxing classes offer the perfect place to start. Proudly
+        serving Kanata and Stittsville, we're the area's only stand-alone boxing program.
       </p>
       <br>
 
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        Our Children's Boxing program is all about having fun, getting them use to
-        exercising while developing hand-eye coordination, balance, concentration,
-        agility, confidence and self-esteem leading to a more self-assured child that
-        will help with their attention to their schoolwork and be calmer at home!
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        Our Children's Boxing Classes are all about having fun while developing healthy exercise
+        habits. Through engaging and energetic classes, children improve their hand-eye coordination,
+        balance, agility, concentration, confidence, and self-esteem. The discipline and focus they
+        develop in class often carry over into improved performance at school and in everyday life!
       </p>
       <br>
       
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        Our Youth Boxing Program is all about giving them the “action” that this age
-        groups need. Getting them busy with a fun cool activity that will make them
-        look forward to the next session. Getting them to burn off excess energy and
-        frustration while getting stronger, fitter and more agile in our dynamic
-        cutting-edge workouts!!
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        Our Youth Boxing Classes are all about giving them the “action” this age group needs. Getting
+        them busy with a fun, exciting activity that will make them look forward to the next session.
+        Getting them to burn off excess energy and frustration while getting stronger, fitter and more
+        agile in our dynamic cutting-edge workout!!
       </p>
       <br>
       
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        Our Adult Boxing Program helps you regain energy, stay active for years to
-        come, and enrich your lifestyle. Don't worry if you're not in shape—that's
-        exactly what our dynamic boxing program is for. We'll help you get moving
-        again and feel fitter in no time. As Dr. Kenneth Cooper said, “You don't stop
-        working out because you get old; you get old when you stop working out.”
-        Think of it this way: if squatting, running, or jumping feels difficult at 40, what
-        will it feel like at 60? If you already feel that way, we're here to help. With years
-        of experience helping people reach their fitness goals, we're committed to
-        getting you back in action, feeling fitter, happier, and we become invested in
-        your success.
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        Our Adult Boxing Classes are designed to help adults in Kanata and Stittsville stay active,
+        improve fitness, and build confidence where it's all about regaining your youth and staying
+        active for years to come, enabling you to enrich your lifestyle. Don't worry if you're not in shape,
+        that's what training in our dynamic boxing program is all about getting back to action and feeling
+        fitter in no time. Thinking of it this quote by Dr. Kenneth Cooper: “you don't stop working out
+        because you get old, you get old when you stop working out.” Think of it this way, if you can't
+        squat, run or jump when you're 40, what will you be like when you're 60? Already there… with
+        over 20 years boxing and working in the fitness field that's what were here for…We become
+        invested in your success!
       </p>
       <br>
       
-      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify text-brown-light">
-        There is no set schedule to give as we schedule your sessions around your
-        availability with small group sessions capped at 4 or even one on one sessions
-        where in both instances, your progress is personally monitored!
+      <p class="text-xl max-w-3xl mx-auto leading-relaxed text-justify">
+        We don't believe one schedule fits everyone. That's why we work around your availability.
+        Whether you prefer small group training (capped at just four participants) or one-on-one
+        coaching, your progress is personally monitored every step of the way.
       </p>
       
 

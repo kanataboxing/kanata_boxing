@@ -34,7 +34,7 @@ export default function FeatureShowcase() {
           <a href={feature.link}>
           <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
             {/* Image */}
-            <div className="relative h-128 overflow-hidden">              <motion.img
+            <div className="relative h-100 overflow-hidden">              <motion.img
                 src={feature.image.src}
                 alt={feature.title}
                 className="w-full h-full object-cover"
