@@ -5,17 +5,12 @@ import Card from '../components/ui/Card.astro';
 import ImageReveal from '../components/react/ImageReveal';
 import { Image } from 'astro:assets';
 
-import gettingStartedImg from '@assets/photo-1451187580459-43490279c0fa.jpg';
-import onboardingChecklistImg from '@assets/photo-1486406146926-c627a92ad1ab.jpg';
-import serviceOverviewImg from '@assets/photo-1550751827-4bd374c3f58b.jpg';
-import technicalDocumentationImg from '@assets/photo-1454165804606-c3d57bc86b40.jpg';
-import operationsManualImg from '@assets/photo-1521737604893-d14cc237f11d.jpg';
-
 import boxing_icon from '@assets/boxing_gloves.png';
 
 import formsTemplatesImg from '@assets/boxing_main.jpg';
 import heroBgImg from '@assets/boxing_main.png';
 import Timeline from '../../components/Timeline.astro';
+import glove_img from '@assets/glove_bullet.png';
 
 ---
 
@@ -23,15 +18,11 @@ import Timeline from '../../components/Timeline.astro';
   <!-- Hero Section with Professional Background -->
   <section class="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
     <div class="absolute inset-0">
-      <Image 
-        src={heroBgImg}
-        alt="Professional documentation and resources"
-        class="w-full h-full object-contain"
-        width={2070}
-        height={1380}
-      />
+      <Image src={heroBgImg} alt="Professional documentation and resources" class="w-full h-full object-contain"
+        width={2070} height={1380} />
       <div class="absolute inset-0"></div>
-      <div style="z-index: -10;" class="absolute inset-0 bg-linear-to-r from-stone-900/95 via-stone-900/80 to-stone-900/50"></div>
+      <div style="z-index: -10;"
+        class="absolute inset-0 bg-linear-to-r from-stone-900/95 via-stone-900/80 to-stone-900/50"></div>
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
     </div>
 
@@ -49,7 +40,7 @@ import Timeline from '../../components/Timeline.astro';
     </div>
   </section>
 
-  
+
 
   <!-- FAQ Section -->
   <Section background="white" id="faq">
@@ -62,44 +53,63 @@ import Timeline from '../../components/Timeline.astro';
         <!-- Frequently Asked <span class="gradient-text">Questions</span> -->
       </h2>
     </div>
-      <div class="text-justify mb-16">
+    <div class="text-justify mb-16">
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-      Master Ken started training in Boxing just over 20 years ago at Motor City Boxing in Oshawa with Don Nelson.  Over the years, he has trained at various other gyms including private sessions at Tri Star in Montreal and with Howard Grant.  He still actively trains and currently holds his Level one NCCP coaching certification through boxing Canada.
-      </p> 
+        Ken started training in Boxing just over 20 years ago at Motor City Boxing in Oshawa with Don Nelson. Over the
+        years, he has trained at various other gyms including private sessions at Tri Star in Montreal and with Howard
+        Grant. He still actively trains and currently holds his Level one NCCP coaching certification through boxing
+        Canada.
+      </p>
       <br>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-      Though boxing is the art where you will find early technical success as a beginner, it does have the stigma about “brain Trauma” due to repetitive punches to the head.  With just over 20 years’ experience training/coaching boxing, and over 40 teaching children, Master Ken has developed this dynamic boxing program where you will gain all the benefits of boxing in a dynamic, safe and fun environment without the inherent risks.
+        Though boxing is the art where you will find early technical success as a beginner, it does have the stigma
+        about “brain Trauma” due to repetitive punches to the head. With just over 20 years' experience
+        training/coaching boxing, and over 40 teaching children, Ken has developed this dynamic boxing program
+        where you will gain all the benefits of boxing in a dynamic, safe and fun environment without the inherent
+        risks.
       </p>
 
       <br>
 
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-      For children, training in boxing has been proven to increase their cognitive ability, memory, stabilize their mood by the mental and physical demands of the workouts.  This increases their focus and concentration while having a great time training all the while building their mental, physical and emotional strength. 
-      <a class="red-link" href= "/master_ken/blog"> Click here for the benefits of boxing for children.
-      <Image 
-        src={boxing_icon}
-        alt="boxing gloves"
-        class="inline h-8 w-8"
-        width={32}
-        height={32}
-      />
-      </a>
+        For children, training in boxing has been proven to increase their cognitive ability, memory, stabilize their
+        mood by the mental and physical demands of the workouts. This increases their focus and concentration while
+        having a great time training all the while building their mental, physical and emotional strength.
+        <a class="red-link" href="/kanata_boxing/boxing_benefits"> Click here for the benefits of boxing for children.
+          <Image src={boxing_icon} alt="boxing gloves" class="inline h-8 w-8" width={32} height={32} />
+        </a>
+
+        <br>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        For adults looking to get in shape, burn off some stress from work, increase your physical wellbeing and mental
+        clarity without having to get bogged down in the technicality of the other martial arts? Then boxing is for you.
+      </p>
 
       <br>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-      For adults looking to get in shape, burn off some stress from work, increase your physical wellbeing and mental clarity without having to get bogged down in the technicality of the other martial arts?  Then boxing is for you.
-      </p>
-
-      <br>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-      Whether you are looking for a program for your child or yourself that will make a difference in school, at home, to get in shape and become a calmer, stronger more confident version of yourself while having a lot of fun in Kanata/Stittsville’s only pure boxing program and be in a welcoming, exciting and fun environment?  Then this is the program for you!  Click here for your free consultation to get started NOW!
+        Whether you are looking for a program for your child or yourself that will make a difference in school, at home,
+        to get in shape and become a calmer, stronger more confident version of yourself while having a lot of fun in
+        Kanata/Stittsville’s only pure boxing program and be in a welcoming, exciting and fun environment? Then this is
+        the program for you! Click here for your free consultation to get started NOW!
       </p>
       <br>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <a class="red-link" href="/kanata_boxing">
+          <Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-12 w-auto"
+                  width={128}
+                  height={128}
+                  decoding="async"
+                  fetchpriority="high"
+                />Homepage
+        </a>
       </p>
+      
     </div>
 
-    
+
   </Section>
 
 
@@ -109,7 +119,7 @@ import Timeline from '../../components/Timeline.astro';
   details summary::-webkit-details-marker {
     display: none;
   }
-  
+
   details[open] summary {
     margin-bottom: 0.5rem;
   }

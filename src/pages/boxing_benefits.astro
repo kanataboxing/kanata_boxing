@@ -5,17 +5,12 @@ import Card from '../components/ui/Card.astro';
 import ImageReveal from '../components/react/ImageReveal';
 import { Image } from 'astro:assets';
 
-import gettingStartedImg from '@assets/photo-1451187580459-43490279c0fa.jpg';
-import onboardingChecklistImg from '@assets/photo-1486406146926-c627a92ad1ab.jpg';
-import serviceOverviewImg from '@assets/photo-1550751827-4bd374c3f58b.jpg';
-import technicalDocumentationImg from '@assets/photo-1454165804606-c3d57bc86b40.jpg';
-import operationsManualImg from '@assets/photo-1521737604893-d14cc237f11d.jpg';
-
 import boxing_icon from '@assets/boxing_gloves.png';
 
 import formsTemplatesImg from '@assets/boxing_main.jpg';
 import heroBgImg from '@assets/blog_benefits_hero.png';
 import Timeline from '../../components/Timeline.astro';
+import glove_img from '@assets/glove_bullet.png';
 
 ---
 
@@ -158,6 +153,34 @@ import Timeline from '../../components/Timeline.astro';
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
         The question isn't whether this works, the research is clear. The question is, are you ready to
         give your child this definite advantage?
+      </p>
+
+      <br>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <a class="red-link" href="/kanata_boxing">
+          <Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-12 w-auto"
+                  width={128}
+                  height={128}
+                  decoding="async"
+                  fetchpriority="high"
+                />Homepage
+        </a>
+      </p>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <a class="red-link" href="https://forms.gle/A4D25asZgPLvw8QF6">
+          <Image 
+                  src={glove_img}
+                  alt="Boxing Glove"
+                  class="inline h-12 w-auto"
+                  width={128}
+                  height={128}
+                  decoding="async"
+                  fetchpriority="high"
+                />For more information about kanata boxing
+        </a>
       </p>
       
     </div>
