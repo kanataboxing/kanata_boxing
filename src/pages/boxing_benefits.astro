@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/ui/Section.astro';
+import Card from '../components/ui/Card.astro';
+import ImageReveal from '../components/react/ImageReveal';
+import { Image } from 'astro:assets';
+
+import gettingStartedImg from '@assets/photo-1451187580459-43490279c0fa.jpg';
+import onboardingChecklistImg from '@assets/photo-1486406146926-c627a92ad1ab.jpg';
+import serviceOverviewImg from '@assets/photo-1550751827-4bd374c3f58b.jpg';
+import technicalDocumentationImg from '@assets/photo-1454165804606-c3d57bc86b40.jpg';
+import operationsManualImg from '@assets/photo-1521737604893-d14cc237f11d.jpg';
+
+import boxing_icon from '@assets/boxing_gloves.png';
+
+import formsTemplatesImg from '@assets/boxing_main.jpg';
+import heroBgImg from '@assets/blog_benefits_hero.png';
+import Timeline from '../../components/Timeline.astro';
+
+---
+
+<BaseLayout title="Documentation - Resources & Guides">
+  <!-- Hero Section with Professional Background -->
+  <section class="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <Image 
+        src={heroBgImg}
+        alt="Professional documentation and resources"
+        class="w-full h-full object-contain"
+        width={2070}
+        height={1380}
+      />
+      <div class="absolute inset-0"></div>
+      <div style="z-index: -10;" class="absolute inset-0 bg-linear-to-r from-stone-900/95 via-stone-900/80 to-stone-900/50"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
+    </div>
+
+    <div class="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  
+
+  <!-- FAQ Section -->
+  <Section background="white" id="faq">
+    <div class="text-center mb-16">
+      <!-- <div class="inline-block px-4 py-2 mb-4 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full">
+        Support
+      </div> -->
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Benefits of Boxing For Children
+        <!-- Frequently Asked <span class="gradient-text">Questions</span> -->
+      </h2>
+    </div>
+      <div class="text-justify mb-16">
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Researchers spent years studying what actually builds cognitive function in children and found
+        that the activity that creates the most dramatic improvements in IQ, focus and academic
+        performance isn't what most people expect. Rhythmic/sequential exercises (like punching
+        drills) support memory, sequencing and concentration that often show improved attention
+        spans and problem-solving skills where regular exercise will help improve memory recall,
+        problem solving skills and attention to detail.
+
+      </p> 
+      <br>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Here's what happens inside your child's brain. Every time they track a moving target and
+        coordinate their hands to strike it, they're building the exact neural pathways that control
+        executive function, working memory and spatial intelligence. The same brain networks that
+        struggle to focus on homework, light up like a Christmas tree during these exercises. But the
+        problem most parents face is that traditional boxing can be intimidating, expensive and yes,
+        potentially dangerous for children. That's exactly why MK has created this unique dynamic
+        program that delivers all the mental, emotional and physical benefits of boxing training:
+        physical fitness, self-confidence, self esteem and yes, even self defense without the inherent
+        risks.
+      </p>
+
+      <br>
+
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Here are a few of the benefits of enrolling your child in a program like this that is aimed at
+        promoting physical fitness, mental resilience and a strong sense of discipline that not only
+        nurtures their physical health but also instills valuable life skills that they can carry with them
+        through their formative years and beyond:
+      </p>
+      <br>
+      <div class="text-xl text-gray-600 max-w-2xl mx-auto">
+        <ol class="space-y-4">
+          <li>
+            1. Boxing is a dynamic workout that will improve cardiovascular conditioning, strength,
+            flexibility in a full body workout that will improve their overall fitness in a fun and
+            engaging way.
+          </li>
+          <li>
+            2. The nature of boxing requires children to develop motor skills, hand-eye coordination
+        and balance as they learn how to throw punches, doge and move around the ring where
+        their agility and physical awareness will improve and will also contribute to their overall
+        athletic performance that will translate to other sports and physical activities.
+          </li>
+          <li>
+            3. Activities such as boxing have been shown to reduce anxiety and stress while improving
+        mood and emotional well-being providing an outlet to express their emotions and
+        emotional regulation, release energy and develop coping mechanisms. It has been
+        shown that endorphins released during activities like this can lead to a happier more
+        positive mindset.
+          </li>
+          <li>
+            4. Lifelong fitness habits: introducing a fun and engaging activity like boxing/martial arts
+        will pique their interest and keep them engaged while they develop a love for physical
+        activity. By building this foundation and fondness, it can motivate them to stay active
+        through out their lives, leading to healthier lifestyle choices as they transition into
+        adulthood.
+          </li>
+          <li>
+            5. Boxing/Martial Arts has been linked to improved cognitive function and academic
+        performance where they develop and exhibit better concentration, higher energy levels
+        and improved memory. Skills developed through this type of training-such as discipline
+        and focus-can directly improve their performance at school.
+          </li>
+          <li>
+            6. Training in activities such as Boxing teaches a child how to handle both success and
+        failure where they are taught to set and given realistic goals and are guided every step of the way towards achieving them where they learn that setbacks are part of the
+        journey. This in turn teaches them to face challenges in life with a far more positive and
+        proactive attitude!
+          </li>
+        </ol>
+      </div>
+      <br>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        It has been shown that introducing children to boxing offers numerous advantages that extend
+        well beyond athletic development. From building fitness, coordination, fostering discipline and
+        resilience, boxing provides a comprehensive platform for personal growth whereas as a
+        beginner, success is the easiest to come by out of all the martial arts and by promoting a
+        healthy lifestyle, your child will be armed with the tools they need to thrive in life.
+        Think about it, regular boxing/martial arts training will enable your child to be more relaxed,
+        self-assured and able to sit still longer to be more focused on homework and other tasks verses
+        2-3 hour of homework battles. Which sounds better?
+      </p>
+      <br>
+
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Within a few short months, parents are reporting their children can focus longer, think clearer
+        and complete tasks they use to avoid. Teachers are asking what's changed? Report cards are
+        improving.
+      </p>
+      <br>
+      
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        The question isn't whether this works, the research is clear. The question is, are you ready to
+        give your child this definite advantage?
+      </p>
+      
+    </div>
+
+    
+  </Section>
+
+
+</BaseLayout>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary {
+    margin-bottom: 0.5rem;
+  }
+</style>

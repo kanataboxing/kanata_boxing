@@ -18,6 +18,7 @@ drills) support memory, sequencing and concentration that often show improved at
 spans and problem-solving skills where regular exercise will help improve memory recall,
 problem solving skills and attention to detail.
 
+<br>
 
 Here’s what happens inside your child’s brain. Every time they track a moving target and
 coordinate their hands to strike it, they’re building the exact neural pathways that control
@@ -29,6 +30,7 @@ program that delivers all the mental, emotional and physical benefits of boxing 
 physical fitness, self-confidence, self esteem and yes, even self defense without the inherent
 risks.
 
+<br>
 
 Here are a few of the benefits of enrolling your child in a program like this that is aimed at
 promoting physical fitness, mental resilience and a strong sense of discipline that not only
@@ -61,6 +63,8 @@ failure where they are taught to set and given realistic goals and are guided ev
 journey. This in turn teaches them to face challenges in life with a far more positive and
 proactive attitude!
 
+<br>
+
 It has been shown that introducing children to boxing offers numerous advantages that extend
 well beyond athletic development. From building fitness, coordination, fostering discipline and
 resilience, boxing provides a comprehensive platform for personal growth whereas as a
@@ -70,9 +74,13 @@ Think about it, regular boxing/martial arts training will enable your child to b
 self-assured and able to sit still longer to be more focused on homework and other tasks verses
 2-3 hour of homework battles. Which sounds better?
 
+<br>
+
 Within a few short months, parents are reporting their children can focus longer, think clearer
 and complete tasks they use to avoid. Teachers are asking what’s changed? Report cards are
 improving.
+
+<br>
 
 The question isn’t whether this works, the research is clear. The question is, are you ready to
 give your child this definite advantage?

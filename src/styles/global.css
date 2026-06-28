@@ -30,7 +30,7 @@ html {
 
 /* Apply light tan background to body */
 body {
-  @apply bg-light-tan;
+  @apply bg-neutral-400;
 }
 
 .nav-active {

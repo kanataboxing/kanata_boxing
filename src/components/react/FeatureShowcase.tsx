@@ -8,14 +8,14 @@ const features = [
     title: '',
     description: '',
     image: boxingImg,
-    link: '/master_ken/martial_arts/boxing'
+    link: '/kanata_boxing/boxing'
   },
   {
     // icon: Headphones,
     title: '',
     description: '',
     image: childprogramImg,
-    link: '/master_ken/child_programs'
+    link: '/kanata_boxing/boxing_benefits'
   }
 ];
 

@@ -1,28 +1,25 @@
 // Site configuration
 export const SITE = {
-  title: 'Master Ken',
-  description: '-- Put Small Description Blurb --',
-  url: 'https://philliams.github.io/master_ken',
-  author: 'Master ken',
+  title: 'Kanata Boxing',
+  description: 'Learn to move like a butterfly and sting like a bee while improving your fitness, confidence, and overall well-being in a fun and supportive environment!',
+  url: 'https://philliams.github.io/kanata_boxing',
+  author: 'Ken. BB',
 } as const;
 
 export const NAVIGATION = [
-  { name: 'Home', href: '/master_ken' },
-  { name: 'About', href: '/master_ken/about'},
-  { name: 'Adult Programs', href: '/master_ken/adult_programs' },
-  { name: 'Child Programs', href: '/master_ken/child_programs' },
-  { name: 'Blog', href: '/master_ken/blog' }
+  { name: 'Home', href: '/kanata_boxing' },
+  { name: 'More Information About Boxing', href: '/kanata_boxing/boxing' },
+  { name: 'Benefits of boxing for children', href: '/kanata_boxing/boxing_benefits' },
+  { name: 'Contact Us', href: 'https://forms.gle/A4D25asZgPLvw8QF6' }
 ] as const;
 
 export const MARTIAL_ARTS = [
-    { name: 'More Information About Boxing', href: '/master_ken/martial_arts/taekwondo' },
-    { name: 'Benefits of boxing for children', href: '/master_ken/martial_arts/hapkido' },
-    { name: 'Contact Us', href: '/master_ken/martial_arts/boxing' }
+    { name: 'More Information About Boxing', href: '/kanata_boxing/boxing' },
+    { name: 'Benefits of boxing for children', href: '/kanata_boxing/boxing_benefits' },
+    { name: 'Contact Us', href: 'https://forms.gle/A4D25asZgPLvw8QF6' }
 ] as const;
 
 export const SOCIAL_LINKS = {
-  linkedin: 'https://linkedin.com/company/yourcompany',
-  twitter: 'https://twitter.com/yourcompany',
   facebook: 'https://facebook.com/yourcompany',
 } as const;
 
