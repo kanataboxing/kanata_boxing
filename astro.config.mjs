@@ -9,6 +9,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://kanataboxing.github.io',
+  site: 'https://kanataboxing.ca',
   base: '/kanata_boxing',
 });
