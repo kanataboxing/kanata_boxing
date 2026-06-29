@@ -2,7 +2,7 @@
 export const SITE = {
   title: 'Kanata Boxing',
   description: 'Learn to move like a butterfly and sting like a bee while improving your fitness, confidence, and overall well-being in a fun and supportive environment!',
-  url: 'https://philliams.github.io/kanata_boxing',
+  url: 'https://kanataboxing.github.io/kanata_boxing/',
   author: 'Ken. BB',
 } as const;
 
