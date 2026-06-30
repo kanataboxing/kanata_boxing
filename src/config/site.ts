@@ -7,16 +7,16 @@ export const SITE = {
 } as const;
 
 export const NAVIGATION = [
-  { name: 'Home', href: '/kanata_boxing' },
-  { name: 'More Information About Boxing', href: '/kanata_boxing/boxing' },
-  { name: 'Benefits of boxing for children', href: '/kanata_boxing/boxing_benefits' },
+  { name: 'Home', href: '' },
+  { name: 'More Information About Boxing', href: '/boxing' },
+  { name: 'Benefits of boxing for children', href: '/boxing_benefits' },
   { name: 'Contact Us', href: 'https://forms.gle/A4D25asZgPLvw8QF6' }
 ] as const;
 
 export const MARTIAL_ARTS = [
-    { name: 'Home', href: '/kanata_boxing' },
-    { name: 'More Information About Boxing', href: '/kanata_boxing/boxing' },
-    { name: 'Benefits of boxing for children', href: '/kanata_boxing/boxing_benefits' },
+    { name: 'Home', href: '/' },
+    { name: 'More Information About Boxing', href: '/boxing' },
+    { name: 'Benefits of boxing for children', href: '/boxing_benefits' },
     { name: 'Contact Us', href: 'https://forms.gle/A4D25asZgPLvw8QF6' }
 ] as const;
 

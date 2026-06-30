@@ -10,5 +10,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://kanataboxing.ca',
-  base: '/kanata_boxing',
+  base: '',
 });
