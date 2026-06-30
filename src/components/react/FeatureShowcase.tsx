@@ -8,14 +8,14 @@ const features = [
     title: '',
     description: '',
     image: boxingImg,
-    link: '/kanata_boxing/boxing'
+    link: '/boxing'
   },
   {
     // icon: Headphones,
     title: '',
     description: '',
     image: childprogramImg,
-    link: '/kanata_boxing/boxing_benefits'
+    link: '/boxing_benefits'
   }
 ];
 
